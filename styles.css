@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*  #############  NAVBAR  ###########  */
+nav {
+    display: flex;
+    flex-direction: row;
+    /* display: inline; */
+    background-color: gray;
+    color: white;
+    position: fixed;
+    /* background-size: cover; */
+    z-index: 3;
+    width: 100%
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#floatRight {
+    float: right;
+}
+
+/* .active { */
+    /* background-color: #4CAF50; */
+/* } */
+
+.navContainer {
+    /* display: flex;
+    flex-wrap: wrap; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navContainer > li {  
+    /* flex: 0 1 auto; */
+    padding: 7.5px 7.5px;
+    margin: 0 5px 0 0;
+    display: inline;
+}
+
+.navContainer :hover {
+    background-color: blue;
+}
+
+.navRight {
+    /* align-self: flex-end; */
+    margin-left: auto;
+}
+.userContainer {
+    /* display: flex;
+    flex-wrap: wrap; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    /* align-self: flex-end; */
+}
+
+.userContainer > li {
+    /* flex: 0 1 auto; */
+    padding: 7.5px 7.5px;
+    margin: 0 5px 0 0;
+    display: inline;
+}
+
+.userContainer :hover {
+    background-color: blue;
+
+}
+
+/* ###############  GRID FOR MAIN PAGE ######################## */
+
+.storefrontGridWrapper {
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: repeat(3, 33% 1fr); */
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.travelGridWrapper {
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+}
+
+#travelTextBox {
+    width: 350px;
+    padding: 12px;
+}
+
+.travelOne {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.travelTwo {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.one {
+    border: black 1px solid;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color: red;
+}
+.travel { 
+    border: black 1px solid;
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    /* align-self: start; */
+    background-color: yellow;
+    /* opacity: .5; */
+}
+.three {
+    border: black 1px solid;
+    grid-column: 1;
+    grid-row: 2 / 5;
+    background-color: green;
+    /* opacity: .5; */
+}
+.four {
+    border: black 1px solid;
+    grid-column: 3;
+    grid-row: 3;
+    background-color: orange;
+    opacity: .5;
+}
+.five {
+    border: black 1px solid;
+    grid-column: 2;
+    grid-row: 4;
+    background-color: blue;
+    opacity: .5;
+}
+.six {
+    border: black 1px solid;
+    grid-column: 3;
+    grid-row: 4;
+    background-color: pink;
+    opacity: .5;
+  }
+
+.flexInFlex {
+    display: flex;
+    flex-direction: row;
+    /* position: relative; */
+    padding: 0;
+    /* align-content: flex-start; */
+    /* align-content: start; */
+    /* align-self: start; */
+    /* align-items: start; */
+
+}
+
+/* ################# HORIZONTAL LIST OF IMAGES ################ */
+.myList {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+.myListItem {    
+    align-items: center;
+    flex: 0 1 auto; 
+    padding: 8px;
+    margin: 0px;
+    background-color: white;
+    border: 1px solid blue;
+    text-align: center;
+    height: 75px;
+}
+
+/* ################# HORIZONTAL LIST OF IMAGES SCROLLABLE ################ */
+.card {
+    position: relative;
+    top: 50px;
+    display: flex;
+    overflow-x: auto;
+    background-color: #fff;
+    max-width: 300px;
+    /* min-width: 100%; */
+    min-height: 200px;
+    max-height: 250px;
+    align-self: flex-start;
+    margin: 15px;
+  }
+
+  .card--content {
+    background-color: white;
+    /* min-width: 250px; */
+    max-width: 100%;
+    margin: 5px;
+  }
+
+/* ################# HORIZONTAL LIST OF IMAGES SCROLLABLE ################ */
+.travelCard {
+    position: relative;
+    /* top: 50px; */
+    display: flex;
+    overflow-x: auto;
+    background-color: #fff;
+    max-width: 300px;
+    /* min-width: 100%; */
+    min-height: 200px;
+    max-height: 250px;
+    align-self: flex-start;
+    /* align-items: start; */
+    /* align-items: center; */
+    margin: 15px;
+  }
+
+  .travelCard--content {
+    background-color: white;
+    /* min-width: 250px; */
+    max-width: 100%;
+    margin: 5px;
+  }
+
+/* ################# HORIZONTAL LIST OF IMAGES (TALL) SCROLLABLE ################ */
+.wardrobeCard {
+    position: relative;
+    /* top: 50px; */
+    display: flex;
+    overflow-x: auto;
+    background-color: #fff;
+    max-width: 250px;
+    /* min-width: 100%; */
+    min-height: 480px;
+    align-items: center;
+  }
+
+  .wardrobeCard--content {
+    background-color: white;
+    /* min-width: 250px; */
+    max-width: 100%;
+    margin: 5px;
+  }
+
+  /* ################# HORIZONTAL LIST OF IMAGES (SMALLER) SCROLLABLE ################ */
+.cardSmall {
+    position: relative;
+    top: 50px;
+    display: flex;
+    overflow-x: auto;
+    background-color: #fff;
+    min-width: 100%;
+    min-height: 75px;
+    z-index: 3;
+  }
+
+  .card--contentSmall {
+    background-color: white;
+    /* background-color: #e74c3c; */
+    min-width: 75px;
+    margin: 5px;
+  }
+
+/* ################# EXTRA LINES AT BOTTOM TO FORCE A VERTICAL SCROLLBAR ################ */
+.linesForScroll {
+    position: relative;
+    top: 50px;
+}

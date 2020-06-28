@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS Grid</title>
+</head>
+<body>
+    <nav>
+        <div class="navLeft">
+
+            <ul class="navContainer">  
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Essentials</a></li>
+                <li><a href="#">Face Masks</a></li>
+                <li><a href="#">Travel</a></li>
+            </ul>
+        </div>
+        <div class="navRight">
+            <ul class="userContainer">
+                <li><img src="./Icons/userIcon.jpg"></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- grid -->
+    <div class="storefrontGridWrapper">
+        <div class="one">
+            <!--
+            Create the My List scroll bar
+        -->
+
+            <p id="flexListHeader">My List</p>
+            <img src="https://drive.google.com/uc?id=1vxaDhilh-OiUbeR3UMhHTwx0VIkrYIb4">
+
+            <ul class="myList">
+                <li class="myListItem"><img src='./assets/FaceMasks/smallFaceMask1.jpg'></li>
+                <li class="myListItem"><img src='./assets/FaceMasks/smallFaceMask2.jpg'></li>
+                <li class="myListItem"><img src='./assets/FaceMasks/smallFaceMask3.jpg'></li>
+                <li class="myListItem"><img src='./assets/FaceMasks/smallFaceMask4.jpg'></li>
+            </ul>
+
+        </div>
+        <div class="travel">Travel
+            <div class="flexInFlex">
+                <div>
+                    <article id="travelTextBox">
+                        <h3>Visit the country of CHAZ</h3>
+                        <span>
+                            Text fill up the space. How does this look on the screen? What does it fill up? Does it push down the flexbox? Or does it write over it?
+                        </span>
+
+                    </article>
+                    <section class="travelCard">
+                        <!-- <section class="card travelOne"> -->
+                            <div class="card--content">
+                                <img src='./assets/TravelAgency/SeattleSkyline.jpg'>
+                            </div>
+                            <div class="card--content">
+                                <img src='./assets/TravelAgency/WelcomeToCHAZ.jpeg'>
+                            </div>
+                            <div class="card--content">
+                                <img src='./assets/TravelAgency/CHAZaccommodations.jpg'>
+                            </div>
+                            <div class="card--content">
+                                <img src='./assets/TravelAgency/CHAZassaultWeapon.jpeg'>
+                            </div>
+                            <div class="card--content">
+                                <img src='./assets/TravelAgency/CHAZCarFire.jpg'>
+                            </div>
+                            <div class="card--content">
+                                <img src='./assets/TravelAgency/CHAZmob.jpg'>
+                            </div>
+                        </section>
+                    </div>
+            
+                <section class="wardrobeCard">
+                <!-- <section class="cardTall travelTwo"> -->
+                    <div class="wardrobeCard--content">
+                        <img src='./assets/RiotGear/blouse.jpg'>
+                    </div>
+                    <div class="wardrobeCard--content">
+                        <img src='./assets/RiotGear/chestArmor.jpg'>
+                    </div>
+                    <div class="wardrobeCard--content">
+                        <img src='./assets/RiotGear/bodyArmor.jpg'>
+                    </div>
+                    <div class="wardrobeCard--content">
+                        <img src='./assets/RiotGear/bodyArmor2.jpg'>
+                    </div>
+                    <div class="wardrobeCard--content">
+                        <img src='./assets/RiotGear/helmet.jpg'>
+                    </div>
+                    <div class="wardrobeCard--content">
+                        <img src='./assets/RiotGear/helmet2.jpg'>
+                    </div>
+                </section>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div class="three">Three
+            <section class="cardSmall">
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+            </section>
+        </div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+    </div>
+
+    <section class="card">
+        <div class="card--content">
+            <img src='./assets/TravelAgency/SeattleSkyline.jpg'>
+        </div>
+        <div class="card--content">
+            <img src='./assets/TravelAgency/WelcomeToCHAZ.jpeg'>
+        </div>
+        <div class="card--content">
+            <img src='./assets/TravelAgency/CHAZaccommodations.jpg'>
+        </div>
+        <div class="card--content">
+            <img src='./assets/TravelAgency/CHAZassaultWeapon.jpeg'>
+        </div>
+        <div class="card--content">
+            <img src='./assets/TravelAgency/CHAZCarFire.jpg'>
+        </div>
+        <div class="card--content">
+            <img src='./assets/TravelAgency/CHAZmob.jpg'>
+        </div>
+      </section>
+
+    <!-- more lines to force scroll bar -->
+    <div class="linesForScroll">
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+    </div>
+</body>
+</html>
