@@ -30,17 +30,36 @@ a {
 
 /* .active { */
     /* background-color: #4CAF50; */
-/* } */
+    /* } */
 
 .navContainer {
     /* display: flex;
     flex-wrap: wrap; */
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 12px;
+}
+
+.userContainer {
+    /* display: flex;
+    flex-wrap: wrap; */
+    list-style-type: none;
+    margin: 0;
+    padding: 12px;
+    float: right;
+    /* align-items: center;
+    justify-content: center; */
+    /* align-self: flex-end; */
 }
 
 .navContainer > li {  
+    /* flex: 0 1 auto; */
+    padding: 7.5px 7.5px;
+    margin: 0 5px 0 0;
+    display: inline;
+}
+
+.userContainer > li {
     /* flex: 0 1 auto; */
     padding: 7.5px 7.5px;
     margin: 0 5px 0 0;
@@ -51,30 +70,19 @@ a {
     background-color: blue;
 }
 
+.userContainer :hover {
+    background-color: blue;
+
+}
+
 .navRight {
     /* align-self: flex-end; */
     margin-left: auto;
 }
-.userContainer {
-    /* display: flex;
-    flex-wrap: wrap; */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: right;
-    /* align-self: flex-end; */
-}
 
-.userContainer > li {
-    /* flex: 0 1 auto; */
-    padding: 7.5px 7.5px;
-    margin: 0 5px 0 0;
-    display: inline;
-}
-
-.userContainer :hover {
-    background-color: blue;
-
+.userContainer img {
+    /* padding: 8px; */
+    border-radius: 150%;
 }
 
 /* ###############  GRID FOR MAIN PAGE ######################## */
@@ -86,7 +94,7 @@ a {
     grid-template-columns: 33% 33% 33%;
     /* grid-template-columns: repeat(3, 1fr); */
     /* grid-template-columns: repeat(3, 33% 1fr); */
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-auto-rows: minmax(100px, auto);
 }
 
@@ -101,8 +109,25 @@ a {
 }
 
 #travelTextBox {
-    width: 350px;
+    width: 300px;
     padding: 12px;
+}
+
+#travelTextBox span {
+    font-size: 12px;
+}
+
+#wardrobeText {
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+}
+
+#wardrobeTextImg {
+    width: 275px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 
 .travelOne {
