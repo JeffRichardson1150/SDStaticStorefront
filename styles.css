@@ -74,49 +74,91 @@ a {
     position: relative;
     top: 50px;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 32% 32% 32%;
     grid-gap: 15px;
     grid-auto-rows: minmax(100px, auto);
+    margin-left: 20px;
 }
 .logoBlock {
-    border: black 1px solid;
+    position: relative;
+    /* border: black 1px solid; */
     grid-column: 1 / 3;
     grid-row: 1 / 4;
-    background-color: orange;
     /* opacity: .5; */
 }
+#logoImg {
+    width: 870px;
+    /* opacity: 90%; */
+}
+
+#logoText {
+    position: absolute;
+    top: 30px;
+    left: 26px;
+    font-family: Comic Sans MS, Textile, Cursive;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+#tagline {
+    position: absolute;
+    top: 90px;
+    left: 26px;
+    font-family: Comic Sans MS, Textile, Cursive;
+    font-size: x-large;
+    font-weight: bold;
+}
 .essentialsBlock {
-    border: black 1px solid;
+    /* border: black 1px solid; */
     grid-column: 3;
     grid-row: 3 / 5;
-    background-color: red;
+    /* background-color: red; */
+}
+
+#essentialsImg {
+    width: 350px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+#faceMaskImg {
+    width: 350px;
+    /* height: 180px; */
+    margin: 0 0 30px 40px;
+}
+
+.flexListHeader {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 40px;
 }
 
 .travel { 
-    border: black 1px solid;
+    /* border: black 1px solid; */
     grid-column: 1 / 3;
     grid-row: 4 / 6;
-    background-color: yellow;
 }
-
 
 .faceMasks {
-    border: black 1px solid;
+    /* border: black 1px solid; */
     grid-column: 3;
     grid-row: 5 / 7;
-    background-color: green;
 }
+
 .introBlock {
-    border: black 1px solid;
+    /* border: black 1px solid; */
     grid-column: 3;
     grid-row: 1 / 3;
-    background-color: pink;
     /* opacity: .5; */
   }
 
+#introBlockText {
+    width: 350px;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 20px;
+  }
 
-
-  .travelGridWrapper {
+.travelGridWrapper {
     position: relative;
     top: 50px;
     display: grid;
@@ -225,6 +267,7 @@ a {
     min-height: 480px;
     align-items: center;
     margin: 10px;
+    margin-top: 0;
   }
 
   .wardrobeCard--content {
@@ -233,25 +276,13 @@ a {
     margin: 5px;
   }
 
-  /* #wardrobeText {
-    width: 290px;
-    margin: 0;
-    padding: 0;
-    margin-top: 100px;
-    font-size: 14px;
-}
-
-#wardrobeTextImg {
-    width: 250px;
-    border-radius: 50%;
-    // margin: 15px; /
-} */
 
 #wardrobeLabel {
     font-size: 12px;
-    margin-top: 15px;
+    margin-top: 65px;
     width: 250px;
     padding: 10px;
+    padding-bottom: 0;
 }
 
 #wardrobeSection {
@@ -261,7 +292,7 @@ a {
   /* ################# HORIZONTAL LIST OF IMAGES (SMALLER) SCROLLABLE ################ */
 .cardSmall {
     position: relative;
-    top: 50px;
+    /* top: 50px; */
     display: flex;
     overflow-x: auto;
     background-color: #fff;
@@ -272,16 +303,14 @@ a {
 
   .card--contentSmall {
     background-color: white;
-    min-width: 75px;
-    margin: 5px;
+    /* max-width: 75px; */
+    max-height: 90px;
+    margin-right: 28px;
   }
 
 .bottomGap {
-    /* border: black 1px solid; */
     grid-column: 1 / 4;
     grid-row: 7;
-    /* background-color: blue; */
-    /* opacity: .5; */
 }
 
 /* Footer */
