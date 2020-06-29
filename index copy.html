@@ -7,18 +7,191 @@
     <title>CSS Grid</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="itemFlex">One</div>
-        <div class="itemFlex">Two</div>
-        <div class="itemFlex">Three</div>
-    </div>
-    <div class="wrapper">
-        <div class="one">One</div>
-        <div class="two">Two</div>
-        <div class="three">Three</div>
+    <nav>
+        <div class="navLeft">
+
+            <ul class="navContainer">  
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Essentials</a></li>
+                <li><a href="#">Face Masks</a></li>
+                <li><a href="#">Travel</a></li>
+            </ul>
+        </div>
+        <div class="navRight">
+            <ul class="userContainer">
+                <!-- <li><img src="./assets/Icons/userIcon.jpg"></li> -->
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- grid -->
+    <div class="storefrontGridWrapper">
+        <div class="one">
+            <!--
+            Create the My List scroll bar
+        -->
+
+            <p id="flexListHeader">My List</p>
+            <img src="https://drive.google.com/uc?id=1vxaDhilh-OiUbeR3UMhHTwx0VIkrYIb4">
+
+            <ul class="myList">
+                <li class="myListItem"><img src='./assets/FaceMasks/smallFaceMask1.jpg'></li>
+                <li class="myListItem"><img src='./assets/FaceMasks/smallFaceMask2.jpg'></li>
+                <li class="myListItem"><img src='./assets/FaceMasks/smallFaceMask3.jpg'></li>
+                <li class="myListItem"><img src='./assets/FaceMasks/smallFaceMask4.jpg'></li>
+            </ul>
+
+        </div>
+        <div class="travel">
+            <div class="flexInFlex">
+                <div>
+                    <article id="travelTextBox">
+                        <h3>Visit the country of CHAZ</h3>
+                        <span>
+                            Visit the newest country - Capital Hill Autonomous Zone.  Nestled in the center of Seattle, WA, CHAZ is a functioning military anarchistic state, in our own back yard. 
+                            <ul>
+                               
+                                <li>
+                                    Take a photo at the border wall with guards armed with assault rifles. 
+                                </li>
+                                <li>
+                                    Revel at the coordination of mobs as they attack visitors who voice alternative thoughts and opinions. 
+                                </li>
+                                <li>
+                                    Watch these pioneers embody the worst of the country from which they emigrated.
+                                </li>
+                            </ul>
+                            </span>
+                            
+                        </article>
+                    <section class="travelCard">
+                        <!-- <section class="card travelOne"> -->
+                            <div class="card--content">
+                                <img src='./assets/TravelAgency/SeattleSkyline.jpg'>
+                            </div>
+                            <div class="card--content">
+                                <img src='./assets/TravelAgency/WelcomeToCHAZ.jpeg'>
+                            </div>
+                            <div class="card--content">
+                                <img src='./assets/TravelAgency/CHAZaccommodations.jpg'>
+                            </div>
+                            <div class="card--content">
+                                <img src='./assets/TravelAgency/CHAZassaultWeapon.jpeg'>
+                            </div>
+                            <div class="card--content">
+                                <img src='./assets/TravelAgency/CHAZCarFire.jpg'>
+                            </div>
+                            <div class="card--content">
+                                <img src='./assets/TravelAgency/CHAZmob.jpg'>
+                            </div>
+                        </section>
+                    </div>
+                    
+                <div id="wardrobeText">
+                    <span>Find new items to enhance your wardrobe to fit in with the citizens of CHAZ</span>
+                    <div>
+                        <img id="wardrobeTextImg" src='./assets/TravelAgency/CHAZcrowd.jpeg'>
+                    </div>
+            
+                </div>
+        
+                <section class="wardrobeCard">
+                <!-- <section class="cardTall travelTwo"> -->
+                    <div class="wardrobeCard--content">
+                        <img src='./assets/RiotGear/blouse.jpg'>
+                    </div>
+                    <div class="wardrobeCard--content">
+                        <img src='./assets/RiotGear/chestArmor.jpg'>
+                    </div>
+                    <div class="wardrobeCard--content">
+                        <img src='./assets/RiotGear/bodyArmor.jpg'>
+                    </div>
+                    <div class="wardrobeCard--content">
+                        <img src='./assets/RiotGear/bodyArmor2.jpg'>
+                    </div>
+                    <div class="wardrobeCard--content">
+                        <img src='./assets/RiotGear/helmet.jpg'>
+                    </div>
+                    <div class="wardrobeCard--content">
+                        <img src='./assets/RiotGear/helmet2.jpg'>
+                    </div>
+                </section>
+            </div>
+            <!-- </div> -->
+        </div>
+        <div class="three">Three
+            <section class="cardSmall">
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+                <div class="card--contentSmall">
+                    <img src='./assets/FaceMasks/smallFaceMask1.jpg'>
+                </div>
+            </section>
+        </div>
         <div class="four">Four</div>
         <div class="five">Five</div>
         <div class="six">Six</div>
-      </div>
+    </div>
+
+    <section class="card">
+        <div class="card--content">
+            <img src='./assets/TravelAgency/SeattleSkyline.jpg'>
+        </div>
+        <div class="card--content">
+            <img src='./assets/TravelAgency/WelcomeToCHAZ.jpeg'>
+        </div>
+        <div class="card--content">
+            <img src='./assets/TravelAgency/CHAZaccommodations.jpg'>
+        </div>
+        <div class="card--content">
+            <img src='./assets/TravelAgency/CHAZassaultWeapon.jpeg'>
+        </div>
+        <div class="card--content">
+            <img src='./assets/TravelAgency/CHAZCarFire.jpg'>
+        </div>
+        <div class="card--content">
+            <img src='./assets/TravelAgency/CHAZmob.jpg'>
+        </div>
+      </section>
+
+    <!-- more lines to force scroll bar -->
+    <div class="linesForScroll">
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+        <h1>Another line</h1>
+    </div>
 </body>
 </html>

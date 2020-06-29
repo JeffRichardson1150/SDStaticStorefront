@@ -10,9 +10,11 @@ body {
 nav {
     display: flex;
     flex-direction: row;
+    /* display: inline; */
     background-color: gray;
     color: white;
     position: fixed;
+    /* background-size: cover; */
     z-index: 3;
     width: 100%
 }
@@ -26,26 +28,39 @@ a {
     float: right;
 }
 
+/* .active { */
+    /* background-color: #4CAF50; */
+    /* } */
+
 .navContainer {
+    /* display: flex;
+    flex-wrap: wrap; */
     list-style-type: none;
     margin: 0;
     padding: 12px;
 }
 
 .userContainer {
+    /* display: flex;
+    flex-wrap: wrap; */
     list-style-type: none;
     margin: 0;
     padding: 12px;
     float: right;
+    /* align-items: center;
+    justify-content: center; */
+    /* align-self: flex-end; */
 }
 
 .navContainer > li {  
+    /* flex: 0 1 auto; */
     padding: 7.5px 7.5px;
     margin: 0 5px 0 0;
     display: inline;
 }
 
 .userContainer > li {
+    /* flex: 0 1 auto; */
     padding: 7.5px 7.5px;
     margin: 0 5px 0 0;
     display: inline;
@@ -61,10 +76,12 @@ a {
 }
 
 .navRight {
+    /* align-self: flex-end; */
     margin-left: auto;
 }
 
 .userContainer img {
+    /* padding: 8px; */
     border-radius: 150%;
 }
 
@@ -75,48 +92,13 @@ a {
     top: 50px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: repeat(3, 33% 1fr); */
     grid-gap: 15px;
     grid-auto-rows: minmax(100px, auto);
 }
-.logoBlock {
-    border: black 1px solid;
-    grid-column: 1 / 3;
-    grid-row: 1 / 4;
-    background-color: orange;
-    /* opacity: .5; */
-}
-.essentialsBlock {
-    border: black 1px solid;
-    grid-column: 3;
-    grid-row: 3 / 5;
-    background-color: red;
-}
 
-.travel { 
-    border: black 1px solid;
-    grid-column: 1 / 3;
-    grid-row: 4 / 6;
-    background-color: yellow;
-}
-
-
-.faceMasks {
-    border: black 1px solid;
-    grid-column: 3;
-    grid-row: 5 / 7;
-    background-color: green;
-}
-.introBlock {
-    border: black 1px solid;
-    grid-column: 3;
-    grid-row: 1 / 3;
-    background-color: pink;
-    /* opacity: .5; */
-  }
-
-
-
-  .travelGridWrapper {
+.travelGridWrapper {
     position: relative;
     top: 50px;
     display: grid;
@@ -135,6 +117,19 @@ a {
     font-size: 12px;
 }
 
+#wardrobeText {
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+}
+
+#wardrobeTextImg {
+    width: 275px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
 .travelOne {
     grid-column: 1 / 2;
     grid-row: 1;
@@ -145,11 +140,58 @@ a {
     grid-row: 1;
 }
 
+.one {
+    border: black 1px solid;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color: red;
+}
+.travel { 
+    border: black 1px solid;
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    /* align-self: start; */
+    background-color: yellow;
+    /* opacity: .5; */
+}
+.three {
+    border: black 1px solid;
+    grid-column: 1;
+    grid-row: 2 / 5;
+    background-color: green;
+    /* opacity: .5; */
+}
+.four {
+    border: black 1px solid;
+    grid-column: 3;
+    grid-row: 3;
+    background-color: orange;
+    opacity: .5;
+}
+.five {
+    border: black 1px solid;
+    grid-column: 2;
+    grid-row: 4;
+    background-color: blue;
+    opacity: .5;
+}
+.six {
+    border: black 1px solid;
+    grid-column: 3;
+    grid-row: 4;
+    background-color: pink;
+    opacity: .5;
+  }
 
 .flexInFlex {
     display: flex;
     flex-direction: row;
+    /* position: relative; */
     padding: 0;
+    /* align-content: flex-start; */
+    /* align-content: start; */
+    /* align-self: start; */
+    /* align-items: start; */
 
 }
 
@@ -181,6 +223,7 @@ a {
     overflow-x: auto;
     background-color: #fff;
     max-width: 300px;
+    /* min-width: 100%; */
     min-height: 200px;
     max-height: 250px;
     align-self: flex-start;
@@ -189,28 +232,31 @@ a {
 
   .card--content {
     background-color: white;
+    /* min-width: 250px; */
     max-width: 100%;
     margin: 5px;
   }
 
 /* ################# HORIZONTAL LIST OF IMAGES SCROLLABLE ################ */
-#travelSection {
-    margin: 0 50px;
-}
 .travelCard {
     position: relative;
+    /* top: 50px; */
     display: flex;
     overflow-x: auto;
     background-color: #fff;
     max-width: 300px;
+    /* min-width: 100%; */
     min-height: 200px;
     max-height: 250px;
     align-self: flex-start;
+    /* align-items: start; */
+    /* align-items: center; */
     margin: 15px;
   }
 
   .travelCard--content {
     background-color: white;
+    /* min-width: 250px; */
     max-width: 100%;
     margin: 5px;
   }
@@ -218,45 +264,22 @@ a {
 /* ################# HORIZONTAL LIST OF IMAGES (TALL) SCROLLABLE ################ */
 .wardrobeCard {
     position: relative;
+    /* top: 50px; */
     display: flex;
     overflow-x: auto;
     background-color: #fff;
     max-width: 250px;
+    /* min-width: 100%; */
     min-height: 480px;
     align-items: center;
-    margin: 10px;
   }
 
   .wardrobeCard--content {
     background-color: white;
+    /* min-width: 250px; */
     max-width: 100%;
     margin: 5px;
   }
-
-  /* #wardrobeText {
-    width: 290px;
-    margin: 0;
-    padding: 0;
-    margin-top: 100px;
-    font-size: 14px;
-}
-
-#wardrobeTextImg {
-    width: 250px;
-    border-radius: 50%;
-    // margin: 15px; /
-} */
-
-#wardrobeLabel {
-    font-size: 12px;
-    margin-top: 15px;
-    width: 250px;
-    padding: 10px;
-}
-
-#wardrobeSection {
-    margin-left: 50px;
-}
 
   /* ################# HORIZONTAL LIST OF IMAGES (SMALLER) SCROLLABLE ################ */
 .cardSmall {
@@ -272,41 +295,13 @@ a {
 
   .card--contentSmall {
     background-color: white;
+    /* background-color: #e74c3c; */
     min-width: 75px;
     margin: 5px;
   }
 
-.bottomGap {
-    /* border: black 1px solid; */
-    grid-column: 1 / 4;
-    grid-row: 7;
-    /* background-color: blue; */
-    /* opacity: .5; */
-}
-
-/* Footer */
-footer {
-	width: 100%;
-	height: 100px;
-	background-color: #333333;
-	position: relative;
-	margin: 0;
-}
-
-.copyRight {
-	color: white;
-	float: left;
-	font-size: 10px;
-	padding: 0px 50px 0px 50px;
-	position: relative;
-	top: 20%;
-}
-
-.copyRight a {
-	text-decoration: none;
-	color: #ffc600;
-}
-
-.copyRight a:hover {
-	color: white;
+/* ################# EXTRA LINES AT BOTTOM TO FORCE A VERTICAL SCROLLBAR ################ */
+.linesForScroll {
+    position: relative;
+    top: 50px;
 }
