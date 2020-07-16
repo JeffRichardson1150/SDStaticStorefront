@@ -10,11 +10,9 @@ body {
 nav {
     display: flex;
     flex-direction: row;
-    /* display: inline; */
     background-color: gray;
     color: white;
     position: fixed;
-    /* background-size: cover; */
     z-index: 3;
     width: 100%
 }
@@ -28,39 +26,26 @@ a {
     float: right;
 }
 
-/* .active { */
-    /* background-color: #4CAF50; */
-    /* } */
-
 .navContainer {
-    /* display: flex;
-    flex-wrap: wrap; */
     list-style-type: none;
     margin: 0;
     padding: 12px;
 }
 
 .userContainer {
-    /* display: flex;
-    flex-wrap: wrap; */
     list-style-type: none;
     margin: 0;
     padding: 12px;
     float: right;
-    /* align-items: center;
-    justify-content: center; */
-    /* align-self: flex-end; */
 }
 
 .navContainer > li {  
-    /* flex: 0 1 auto; */
     padding: 7.5px 7.5px;
     margin: 0 5px 0 0;
     display: inline;
 }
 
 .userContainer > li {
-    /* flex: 0 1 auto; */
     padding: 7.5px 7.5px;
     margin: 0 5px 0 0;
     display: inline;
@@ -76,12 +61,10 @@ a {
 }
 
 .navRight {
-    /* align-self: flex-end; */
     margin-left: auto;
 }
 
 .userContainer img {
-    /* padding: 8px; */
     border-radius: 150%;
 }
 
@@ -91,12 +74,89 @@ a {
     position: relative;
     top: 50px;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* grid-template-columns: repeat(3, 33% 1fr); */
+    grid-template-columns: 32% 32% 32%;
     grid-gap: 15px;
     grid-auto-rows: minmax(100px, auto);
+    margin-left: 20px;
 }
+.logoBlock {
+    position: relative;
+    /* border: black 1px solid; */
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    /* opacity: .5; */
+}
+#logoImg {
+    width: 870px;
+    /* opacity: 90%; */
+}
+
+#logoText {
+    position: absolute;
+    top: 30px;
+    left: 26px;
+    font-family: Comic Sans MS, Textile, Cursive;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+#tagline {
+    position: absolute;
+    top: 90px;
+    left: 26px;
+    font-family: Comic Sans MS, Textile, Cursive;
+    font-size: x-large;
+    font-weight: bold;
+}
+.essentialsBlock {
+    /* border: black 1px solid; */
+    grid-column: 3;
+    grid-row: 3 / 5;
+    /* background-color: red; */
+}
+
+#essentialsImg {
+    width: 350px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+#faceMaskImg {
+    width: 350px;
+    /* height: 180px; */
+    margin: 0 0 30px 40px;
+}
+
+.flexListHeader {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.travel { 
+    /* border: black 1px solid; */
+    grid-column: 1 / 3;
+    grid-row: 4 / 6;
+}
+
+.faceMasks {
+    /* border: black 1px solid; */
+    grid-column: 3;
+    grid-row: 5 / 7;
+}
+
+.introBlock {
+    /* border: black 1px solid; */
+    grid-column: 3;
+    grid-row: 1 / 3;
+    /* opacity: .5; */
+  }
+
+#introBlockText {
+    width: 350px;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 20px;
+  }
 
 .travelGridWrapper {
     position: relative;
@@ -117,19 +177,6 @@ a {
     font-size: 12px;
 }
 
-#wardrobeText {
-    width: 290px;
-    margin: 0;
-    padding: 0;
-    margin-top: 100px;
-}
-
-#wardrobeTextImg {
-    width: 275px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
 .travelOne {
     grid-column: 1 / 2;
     grid-row: 1;
@@ -140,79 +187,12 @@ a {
     grid-row: 1;
 }
 
-.one {
-    border: black 1px solid;
-    grid-column: 1 / 3;
-    grid-row: 1;
-    background-color: red;
-}
-.travel { 
-    border: black 1px solid;
-    grid-column: 2 / 4;
-    grid-row: 1 / 3;
-    /* align-self: start; */
-    background-color: yellow;
-    /* opacity: .5; */
-}
-.three {
-    border: black 1px solid;
-    grid-column: 1;
-    grid-row: 2 / 5;
-    background-color: green;
-    /* opacity: .5; */
-}
-.four {
-    border: black 1px solid;
-    grid-column: 3;
-    grid-row: 3;
-    background-color: orange;
-    opacity: .5;
-}
-.five {
-    border: black 1px solid;
-    grid-column: 2;
-    grid-row: 4;
-    background-color: blue;
-    opacity: .5;
-}
-.six {
-    border: black 1px solid;
-    grid-column: 3;
-    grid-row: 4;
-    background-color: pink;
-    opacity: .5;
-  }
 
 .flexInFlex {
     display: flex;
     flex-direction: row;
-    /* position: relative; */
     padding: 0;
-    /* align-content: flex-start; */
-    /* align-content: start; */
-    /* align-self: start; */
-    /* align-items: start; */
 
-}
-
-/* ################# HORIZONTAL LIST OF IMAGES ################ */
-.myList {
-      display: flex;
-      flex-direction: row;
-      list-style-type: none;
-      justify-content: flex-start;
-      align-items: center;
-  }
-
-.myListItem {    
-    align-items: center;
-    flex: 0 1 auto; 
-    padding: 8px;
-    margin: 0px;
-    background-color: white;
-    border: 1px solid blue;
-    text-align: center;
-    height: 75px;
 }
 
 /* ################# HORIZONTAL LIST OF IMAGES SCROLLABLE ################ */
@@ -223,7 +203,6 @@ a {
     overflow-x: auto;
     background-color: #fff;
     max-width: 300px;
-    /* min-width: 100%; */
     min-height: 200px;
     max-height: 250px;
     align-self: flex-start;
@@ -232,31 +211,28 @@ a {
 
   .card--content {
     background-color: white;
-    /* min-width: 250px; */
     max-width: 100%;
     margin: 5px;
   }
 
 /* ################# HORIZONTAL LIST OF IMAGES SCROLLABLE ################ */
+#travelSection {
+    margin: 0 50px;
+}
 .travelCard {
     position: relative;
-    /* top: 50px; */
     display: flex;
     overflow-x: auto;
     background-color: #fff;
     max-width: 300px;
-    /* min-width: 100%; */
     min-height: 200px;
     max-height: 250px;
     align-self: flex-start;
-    /* align-items: start; */
-    /* align-items: center; */
     margin: 15px;
   }
 
   .travelCard--content {
     background-color: white;
-    /* min-width: 250px; */
     max-width: 100%;
     margin: 5px;
   }
@@ -264,44 +240,81 @@ a {
 /* ################# HORIZONTAL LIST OF IMAGES (TALL) SCROLLABLE ################ */
 .wardrobeCard {
     position: relative;
-    /* top: 50px; */
     display: flex;
     overflow-x: auto;
     background-color: #fff;
     max-width: 250px;
-    /* min-width: 100%; */
     min-height: 480px;
     align-items: center;
+    margin: 10px;
+    margin-top: 0;
   }
 
   .wardrobeCard--content {
     background-color: white;
-    /* min-width: 250px; */
     max-width: 100%;
     margin: 5px;
   }
 
+
+#wardrobeLabel {
+    font-size: 12px;
+    margin-top: 65px;
+    width: 250px;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+#wardrobeSection {
+    margin-left: 50px;
+}
+
   /* ################# HORIZONTAL LIST OF IMAGES (SMALLER) SCROLLABLE ################ */
 .cardSmall {
     position: relative;
-    top: 50px;
+    /* top: 50px; */
     display: flex;
     overflow-x: auto;
     background-color: #fff;
     min-width: 100%;
     min-height: 75px;
-    z-index: 3;
   }
 
   .card--contentSmall {
     background-color: white;
-    /* background-color: #e74c3c; */
-    min-width: 75px;
-    margin: 5px;
+    /* max-width: 75px; */
+    max-height: 90px;
+    margin-right: 28px;
   }
 
-/* ################# EXTRA LINES AT BOTTOM TO FORCE A VERTICAL SCROLLBAR ################ */
-.linesForScroll {
-    position: relative;
-    top: 50px;
+.bottomGap {
+    grid-column: 1 / 4;
+    grid-row: 7;
+}
+
+/* Footer */
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: #333333;
+	position: relative;
+	margin: 0;
+}
+
+.copyRight {
+	color: white;
+	float: left;
+	font-size: 10px;
+	padding: 0px 50px 0px 50px;
+	position: relative;
+	top: 20%;
+}
+
+.copyRight a {
+	text-decoration: none;
+	color: #ffc600;
+}
+
+.copyRight a:hover {
+	color: white;
 }
